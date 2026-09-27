@@ -1,0 +1,24 @@
+#FrozenSet - Build an immutable unordered collection of unique elements 
+
+# In dictionary, we can use .get() method to get the values from dictionary and if the value is not present it will not break the code it will return the default value provided by use
+
+EG:
+customer_note=order.get("note","No note provided")   -> in this if the order has no note, it will return "No note provided"
+
+# Ternary operator 
+Example : 
+order_amount=int(input("Enter amount "))
+delivery_fees=0 if order_amount<300 else 30
+print(delivery_fees)
+
+# Match case
+
+seat_type=input("Enter seat type : ")
+
+match seat_type:
+    case "luxury":
+        print("Luxury")
+    case "sleeper":
+        print("sleeper")
+    case _:
+        print("Invalid seat")
